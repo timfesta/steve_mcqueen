@@ -1,0 +1,15 @@
+<%= form_for :user, url:{action:"update"} do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+
+<%= f.label :password %>
+<%= f.text_field :password %>
+
+<%= f.submit %>
+<% end %>
+<!-- <form action="/users/<%= @user.id %>" method="post">
+ <%= token_tag form_authenticity_token %>
+<input type="string" name="user[name]" value="<%=@user.name %>"> 
+<input type="string" name="user[password]" value="<%=@user.password %>"> 
+</form> -->
+

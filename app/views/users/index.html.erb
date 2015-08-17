@@ -1,0 +1,16 @@
+
+<% @users.each do |user| %>
+	Name: <%= user.name %>
+	Password: <%= user.password %>
+	<button>Create Account</button>
+<% end %>
+
+
+<!-- 
+<form action="/users" method="post">
+<input type="string" name="user[name]">
+<input type="string" name="user[password]">
+ <%= token_tag form_authenticity_token %>
+<button>Create Account</button>
+</form> -->
+
